@@ -19,5 +19,7 @@
 | <a name="input_any-ip"></a> [any-ip](#input\_any-ip) | Any external IP | `string` | `"0.0.0.0/0"` | no |
 | <a name="input_aws_azs"></a> [aws\_azs](#input\_aws\_azs) | Default AZs for this configuration | `list(string)` | <pre>[<br>  "us-east-1e",<br>  "us-east-1f"<br>]</pre> | no |
 | <a name="input_aws_region"></a> [aws\_region](#input\_aws\_region) | Default AWS region | `string` | `"us-east-1"` | no |
+| <a name="input_ec2_ami"></a> [ec2\_ami](#input\_ec2\_ami) | Ubuntu 22.04 - us-east-1 | `string` | `"ami-0c7217cdde317cfec"` | no |
+| <a name="input_ec2_type"></a> [ec2\_type](#input\_ec2\_type) | Free tier instance | `string` | `"t2.micro"` | no |
 | <a name="input_empresa"></a> [empresa](#input\_empresa) | VPC name | `string` | `"blogupper"` | no |
 <!-- END_TF_DOCS -->
