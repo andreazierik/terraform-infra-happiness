@@ -24,8 +24,8 @@ variable "any-ip" {
 
 variable "ec2_ami" {
   type        = string
-  default     = "ami-0c7217cdde317cfec"
-  description = "Ubuntu 22.04 - us-east-1"
+  default     = "ami-0e9107ed11be76fde"
+  description = "Amazon Linux 2023 - us-east-1"
 }
 
 variable "ec2_type" {
