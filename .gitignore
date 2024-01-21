@@ -1,3 +1,4 @@
+.infracost/*
 .terraform/*
 .terraform.lock.hcl
 blogupper.json
