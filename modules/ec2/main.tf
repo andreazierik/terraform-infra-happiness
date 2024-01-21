@@ -29,7 +29,7 @@ resource "aws_security_group_rule" "bu_default_sg_rule_ssh" {
   from_port         = 22
   to_port           = 22
   protocol          = "tcp"
-  cidr_blocks       = ["45.230.103.131/32"]
+  cidr_blocks       = ["45.230.103.145/32"]
   security_group_id = aws_security_group.bu_default_sg.id
 }
 
@@ -41,13 +41,6 @@ resource "aws_instance" "bu_ec2" {
   vpc_security_group_ids = [aws_security_group.bu_default_sg.id]
   subnet_id              = var.bu_subnet
 
-  user_data = <<EOF
-    #!/bin/bash
-    sudo apt update
-    sudo apt upgrade -y
-    sudo apt install nginx -y
-    sudo systemctl enable --now nginx.service
-  EOF
   tags = {
     Name = "${var.name}-${count.index + 1}"
   }
